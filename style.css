@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+.card {
+	position: relative;
+	width: 600px;
+	height: 350px;
+	margin: 20px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	border-radius: 20px;
+	background: linear-gradient(135deg, #101010 10%, #606060 90%);
+}
+.card img {
+	position: absolute;
+	bottom: 20;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 250px;
+	transition: 0.8s;
+}
+.card:hover img {
+	left: 80%;
+	height: 350px;
+}
+.card .content {
+	position: relative;
+	width: 50%;
+	left: 20%;
+	padding: 20px 20px 20px 40px;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.8s;
+}
+.card:hover .content {
+	left: 0%;
+	opacity: 1;
+	visibility: visible;
+}
+.content h2 {
+	color: #f0f0f0;
+	font-size: 40px;
+	text-transform: uppercase;
+	line-height: 70px;
+}
+.content p {
+	color: #f0f0f0;
+	font-size: 17px;
+	line-height: 30px;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+.content a {
+	text-decoration: none;
+	color: #f0f0f0;
+	background-color: #171717;
+	padding: 5px 15px;
+	border: none;
+	border-radius: 8px;
+}
+#superman {
+	background: linear-gradient(135deg, #aa2920, #347cd4);
+}
+
+#wonderwoman {
+	background: linear-gradient(135deg, #770c08, #383cc1);
+}
+#wonderwoman .content h2 {
+	width: 550px;
+}
+
+#aquaman {
+	background: linear-gradient(135deg, #268057, #e4b35a);
+}
+
+#flash {
+	background: linear-gradient(135deg, #742622 48%, #d2a14a 86%);
+}
+
+#blackadam {
+	background: linear-gradient(135deg, #242423 55%, #ffe180 146%);
+}
+#blackadam .content h2 {
+	width: 500px;
+}
+
+#ironman {
+	background: linear-gradient(135deg, #9f1e1c 40%, #c3a35a 82%);
+}
+#spiderman {
+	background: linear-gradient(135deg, #ca2b2b 2%, #7677a5 69%);
+}
+#captainamerica {
+	background: linear-gradient(135deg, #932a30 2%, #bec5ca, #47607e 69%);
+}
+#captainamerica .content h2 {
+	width: 550px;
+}
+
+#captainmarvel {
+	background: linear-gradient(135deg, #df5052 2%, #c9aa8a, #47607e 69%);
+}
+#captainmarvel .content h2 {
+	width: 550px;
+}
+#thor {
+	background: linear-gradient(135deg, #333939 22%, #2f79d1, #a12029 87%);
+}
+#doctorstrange {
+	background: linear-gradient(135deg, #414557 39%, #e5732e 50%, #93413c 73%);
+}
+#doctorstrange .content h2 {
+	width: 500px;
+}
+#hulk {
+	background: linear-gradient(135deg, #868656 20%, #424a42 53%);
+}
